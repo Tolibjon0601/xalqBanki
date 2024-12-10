@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./assets/fonts/Poppins-Medium.ttf");
+}
+
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Source Sans Pro", sans-serif;
+    --third-family: "Open Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+}
+.hero_right {
+    background-image: url(./assets/icons/hero_bg_img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.curriculumImg {
+    background-image: url(./assets/icons/sv_bg_img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.customBorder {
+    border: 1.25px solid rgba(0, 0, 0, 0.17);
+}
+.jobInterview {
+    background-image: url(./assets/icons/sv_bg_img.svg);
+    background-repeat: no-repeat;
+
+    background-position: center;
+}
+.swiper_logo {
+    border: 1.25px solid rgba(9, 80, 82, 0.5);
+}
+.swiper-button-prev:after {
+    content: url("./assets/icons/left.svg") !important;
+}
+.swiper-button-next:after {
+    content: url("./assets/icons/right.svg") !important;
+}
+
+.select select {
+    width: 340px;
+    padding: 18px 15px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 31px;
+    border-radius: 7px;
+    background: #fff;
+}
+
+.intern .intern-hero-left {
+  box-shadow: 0px 4.99px 4.99px 0 #00000025;
+  border: 1.25px solid #dadada;
+}
+.intern .intern-main {
+  box-shadow: 0px 4.99px 4.99px 0 #00000025;
+  border: 1.25px solid #dadada;
+}
+
+.intern .intern-hero-left::after {
+  content: url(./assets//images/intern-text-bg.png);
+  position: relative;
+  top: -350px;
+  left: 150px;
+}
+.footer {
+    background-image: url(./assets/icons/footer_bg_img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
